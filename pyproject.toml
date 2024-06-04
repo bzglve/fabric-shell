@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "fabric-shell"
+version = "0.1.0"
+description = ""
+authors = ["bzglve <viktory683@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fabric = { git = "https://github.com/Fabric-Development/fabric.git" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
