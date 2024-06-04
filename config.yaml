@@ -1,0 +1,5 @@
+clock:
+    time:  %I:%M:%S %p
+    date:  %a, %d %b 20%y
+logging:
+    level: TRACE

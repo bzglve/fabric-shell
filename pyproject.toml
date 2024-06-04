@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fabric-shell"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["bzglve <viktory683@gmail.com>"]
 readme = "README.md"
@@ -8,7 +8,26 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 fabric = { git = "https://github.com/Fabric-Development/fabric.git" }
+pyyaml = "^6.0.1"
+pydantic = "^2.7.3"
 
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+pygobject-stubs = "^2.11.0"
+
+[tool.poetry.scripts]
+fabric = "fabric_shell.main:start"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+# select = ['D']
+
+[tool.ruff.lint.pydocstyle]
+convention = 'google'
 
 [build-system]
 requires = ["poetry-core"]
